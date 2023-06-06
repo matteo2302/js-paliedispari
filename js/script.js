@@ -28,13 +28,17 @@ function even(a) {
 function somma(a, b) {
   return cpuNumber + playerNumber;
 }
+function random() {
+  return Math.floor(Math.random() * 5 + 1);
+}
 //fase 0
 //varaibili di base
-let playerChoice = prompt("scegli se scommetere su pari o dispari", "pari");
+let playerChoice = prompt("scegli se scommetere su pari o dispari", "").trim();
 let playerNumber = parseInt(
-  prompt("scegli un numero non inferiore a uno e non superiore a 5", 2)
+  prompt("scegli un numero non inferiore a uno e non superiore a 5", "")
 );
-let cpuNumber = Math.floor(Math.random() * 5 + 1);
+random();
+let cpuNumber = random();
 let winner = "ha vinto la cpu";
 let numresult = somma(cpuNumber, playerNumber);
 let evenOdd = "dispari";

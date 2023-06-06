@@ -18,7 +18,10 @@
 - creo una function somma
   - raccolgo il numero detto dal giocatore e dalla cpu e li unisco
   - do il valore della somma al result
-  - creo una function pari o dispari
-    - inserisco un if se il numero diviso pr due mi da il resto di 0
-      **fase 1**
+- creo una function pari o dispari
+  - inserisco un if se il numero diviso pr due mi da il resto di 0
+    -creo una function random per il valore della cpu
+
+**fase 1**
+
 - creo un if il risultato della function sia uguale a la risposta data dall'utente o viceversa
