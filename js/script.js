@@ -19,6 +19,17 @@ console.log("jsok");
 //   console.log(result);
 // }
 /*********************pari o dispari***********************/
+//funzioni
+function even(a) {
+  if (numresult % 2 === 0) {
+    evenOdd = "pari";
+  }
+}
+function somma(a, b) {
+  return cpuNumber + playerNumber;
+}
+//fase 0
+//varaibili di base
 let playerChoice = prompt("scegli se scommetere su pari o dispari", "pari");
 let playerNumber = parseInt(
   prompt("scegli un numero non inferiore a uno e non superiore a 5", 2)
@@ -30,15 +41,12 @@ let evenOdd = "dispari";
 console.log(playerChoice);
 console.log(playerNumber);
 console.log(cpuNumber);
-function somma(a, b) {
-  return cpuNumber + playerNumber;
-}
+//fase 1
 somma();
 console.log(numresult);
-function even(a) {
-  if (numresult % 2 === 0) {
-    evenOdd = "pari";
-  }
-}
 even();
 console.log(evenOdd);
+if (evenOdd === playerChoice) {
+  winner = "hai vinto tu!";
+}
+console.log(winner);
