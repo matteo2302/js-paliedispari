@@ -25,12 +25,22 @@ let playerNumber = parseInt(
 );
 let cpuNumber = Math.floor(Math.random() * 5 + 1);
 let winner = "ha vinto la cpu";
-let numresult;
+let numresult = somma(cpuNumber, playerNumber);
+let evenOdd = even(numresult);
 console.log(playerChoice);
 console.log(playerNumber);
 console.log(cpuNumber);
-function somma(cpuNumber, playerNumber) {
-  numresult = cpuNumber + playerNumber;
+function somma(a, b) {
+  return cpuNumber + playerNumber;
 }
 somma();
 console.log(numresult);
+function even(a) {
+  if (numresult % 2 === 0) {
+    evenOdd = "pari";
+  } else {
+    evenOdd = "odd";
+  }
+}
+evenOdd();
+console.log(evenOdd);
